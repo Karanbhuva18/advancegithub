@@ -1,33 +1,7 @@
 import React from "react";
 import "./userCard.css";
-
+import { users } from "../constantdata/constantdata.js";
 // Sample user data array
-const users = [
-  {
-    id: 1,
-    name: "John Doe",
-    country: "USA",
-    college: "Harvard University",
-    income: "$75,000",
-    hobby: "Photography",
-  },
-  {
-    id: 2,
-    name: "Emily Smith",
-    country: "Canada",
-    college: "University of Toronto",
-    income: "$68,000",
-    hobby: "Traveling",
-  },
-  {
-    id: 3,
-    name: "Michael Johnson",
-    country: "UK",
-    college: "Oxford University",
-    income: "$80,000",
-    hobby: "Cooking",
-  },
-];
 
 const UserCard = () => {
   return (
