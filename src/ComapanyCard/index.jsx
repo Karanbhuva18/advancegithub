@@ -15,7 +15,7 @@ const CompanyCard = () => {
             </div>
             <div className="company-details">
               <p>
-                📍 <strong>Location:</strong> {company.location}
+                📍 <strong>Company Location:</strong> {company.location}
               </p>
               <p>
                 💰 <strong>Revenue:</strong> {company.revenue}
