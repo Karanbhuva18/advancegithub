@@ -1,65 +1,67 @@
-/* Container */
 .user-cards-container {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  /* Grid Layout */
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Grid Layout */
+.user-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Card */
+.user-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.user-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Avatar */
+.user-avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #fff;
+}
+
+/* User Info */
+.user-info p {
+  font-size: 1rem;
+  color: #333;
+  margin: 6px 0;
+  padding: 6px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
   .user-cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-content: center;
+    grid-template-columns: 1fr;
   }
-  
-  /* Card Styling */
-  .user-card {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .user-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Avatar */
-  .avatar img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 3px solid #ddd;
-  }
-  
-  /* Text Styling */
-  .user-name {
-    font-size: 1.5rem;
-    color: #333;
-    margin: 10px 0;
-  }
-  
-  .user-info {
-    font-size: 1rem;
-    color: #666;
-    margin: 5px 0;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .user-cards-grid {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-  }
-  
+}
