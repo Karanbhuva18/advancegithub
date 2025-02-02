@@ -1,0 +1,55 @@
+/* Container for all cards */
+.company-cards-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title styling */
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Grid system for company cards */
+  .company-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Individual company card styling */
+  .company-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: left;
+    border-left: 5px solid #007bff;
+  }
+  
+  .company-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Company name styling */
+  .company-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  /* Company details */
+  .company-info {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
