@@ -14,12 +14,24 @@ const CompanyCard = () => {
               <span className="company-id">#{company.id}</span>
             </div>
             <div className="company-details">
-              <p>📍 <strong>Location:</strong> {company.location}</p>
-              <p>💰 <strong>Revenue:</strong> {company.revenue}</p>
-              <p>📈 <strong>Stock Price:</strong> {company.stockPrice}</p>
-              <p>🌍 <strong>International:</strong> {company.international}</p>
-              <p>🏬 <strong>Offices:</strong> {company.offices}</p>
-              <p>👥 <strong>Employees:</strong> {company.employees}</p>
+              <p>
+                📍 <strong>Location:</strong> {company.location}
+              </p>
+              <p>
+                💰 <strong>Revenue:</strong> {company.revenue}
+              </p>
+              <p>
+                📈 <strong>Stock Price:</strong> {company.stockPrice}
+              </p>
+              <p>
+                🌍 <strong>International:</strong> {company.international}
+              </p>
+              <p>
+                🏬 <strong>Offices:</strong> {company.offices}
+              </p>
+              <p>
+                👥 <strong>Employees:</strong> {company.employees}
+              </p>
             </div>
           </div>
         ))}
